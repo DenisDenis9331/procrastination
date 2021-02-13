@@ -12,10 +12,11 @@ let phrases = [
 ];
 
 
-// https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array/12646864#12646864
+// написать функцию запоминающую предыдущий элемент и сравнивающая его с текущим, если повтор - берём другой
 function getRandomElement(arr) {
-  let randIndex = Math.floor(Math.random() * arr.length);
-  return arr[randIndex];
+    let randIndex = Math.floor(Math.random() * arr.length);
+    console.log(arr[randIndex]);
+    return arr[randIndex];
 }
 
 let button = document.querySelector('.button');
